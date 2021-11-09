@@ -1,14 +1,19 @@
-# VS_Code_Exercise
-Now that you have VS Code, it's time to connect it to a Git Repository. Navigate to your Github account and create a Git Repository. Call it "VS_Code_Exercise". When creating the repo, select the check box that says "Intialize with a Readme".
+This is a simple package that you can use to create, edit, and quiz yourself on flashcards.
 
-Once the repo has been created, click the green button that says "Code" and copy the link that pops up.
+When you import flash_lib.py, you can create an instance of a deck of flashcards by setting a variable (in this README, we will use "fc" to refer to this variable) equal to flash_lib.flashcard()
+fc = flash_lib.flashcard()
 
-Open up a fresh instance of VS Code on your desktop and select "Clone Git Repository". Paste the link you copied in the box that pops up and hit enter.
+You can create cards in your deck by using the create_deck() module
+fc.create_deck()
+You will be prompted to input the amount of cards you would like to create. Split words and definitions by a comma, and be careful with spaces and capitalization as modules in this package are sensitive to those variations. DO NOT put a space after the comma when adding cards to the deck.
 
-Once the Git Repo has been successfully cloned, open it, and copy in your file from exercise 1.
+You can add cards in your deck by using the add_cards_deck(n) module
+Pass n as the number of cards you would like to add, for example 2:
+fc.add_cards_deck(2)
 
-Edit the Readme file that will populate and paste in these instructions into the Readme file. Save it.
+You can delete cards from the deck by using the del_cards_deck(word) module and pass the word from the card you would like to delete from the deck
+For example to delete the card with word "cells":
+fc.del_cards_deck("cells")
 
-For you to figure out: stage, add a commit message, commit, and push the changes to your Github Repo. Hint: there should be a "1" or "2" that has popped up on the left side of your screen on one of the vertical tabs! This indicates that your local repo is different than the original Github repo you created. Clicking on it should set you up to complete the required steps (also Google is your friend).
-
-After completing the above steps, navigate to your Github repo online (which now should have your hello_world.ipynb), and take a screenshot proving you have completed the above steps and include the screenshot below:
+You can quiz yourself using the quiz() module
+fc.quiz()
