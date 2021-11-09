@@ -1,7 +1,7 @@
 This is a simple package that you can use to create, edit, and quiz yourself on flashcards.
 
-When you import flash_lib.py, you can create an instance of a deck of flashcards by setting a variable (in this README, we will use "fc" to refer to this variable) equal to flash_lib.flashcard()
-fc = flash_lib.flashcard()
+When you import simpleflashcardpkg.py, you can create an instance of a deck of flashcards by setting a variable (in this README, we will use "fc" to refer to this variable) equal to simpleflashcardpkg.flashcard()
+fc = simpleflashcardpkg.flashcard()
 
 You can create cards in your deck by using the create_deck() module
 fc.create_deck()
