@@ -1,5 +1,5 @@
-from src.flashcardpkg import flash_lib
+from src.flashcardpkg import simpleflashcardpkg
 
-ds = flash_lib.flashcard()
+ds = simpleflashcardpkg.flashcard()
 
 ds.create_deck()
